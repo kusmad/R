@@ -7,10 +7,10 @@ library(DT)
 library(tidyr)
 
 
-sales <- read.csv("C:\Users\Daniel\Desktop\sales%20data-set.csv")
+sales <- read.csv("https://raw.githubusercontent.com/kusmad/R/main/sales%2520data-set.csv")
 sales$Store<-as.factor(sales$Store)
 sales$Date <- sales$Date %>% as.Date("%d/%m/%Y")
-storesDat <- read.csv("C:\Users\Daniel\Desktop\stores%20data-set.csv")
+storesDat <- read.csv("https://raw.githubusercontent.com/kusmad/R/main/stores%2520data-set.csv")
 storesDat$Store<-as.factor(storesDat$Store)
 ui <- fluidPage(
     
